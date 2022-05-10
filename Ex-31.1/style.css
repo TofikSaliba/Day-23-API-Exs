@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  margin: 3rem 0;
+}
+
+.headerRow,
+.dataRow {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.headerRow {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  border: 1px solid black;
+  padding: 0.3rem;
+}
+
+.cell:hover {
+  background-color: #a1a1a1;
+}
