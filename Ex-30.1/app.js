@@ -10,11 +10,11 @@ const getProfile = async (
     if (!res.ok) {
       throw new Error(`Profile not found: ${res.status}`);
     }
-    if (users.includes(user)) {
+    if (users.includes(user.toLowerCase())) {
       errorDiv.innerText = `User card is already displayed! try another`;
       return;
     } else {
-      users.push(user);
+      users.push(user.toLowerCase());
     }
     const data = await res.json();
     const userObj = {

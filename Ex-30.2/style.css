@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  background: cadetblue;
+}
+
+#header {
+  font-size: 5rem;
+}
+
+#input,
+#search {
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+#select {
+  border-radius: 5px;
+  border: none;
+  padding: 0.9rem;
+  margin-right: 1rem;
+}
+
+#search {
+  cursor: pointer;
+  background: rgb(207, 135, 62);
+  color: white;
+}
+
+#search:hover {
+  background: rgb(196, 116, 37);
+}
+
+.error {
+  color: red;
+  height: 2rem;
+  margin-top: 0.3rem;
+}
+
+.container {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(83, 65, 117);
+  color: white;
+}
+
+.abs {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  top: 10%;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(247, 142, 37);
+}
+
+.genre,
+.ratings {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.director-box {
+  display: inline-block;
+  background: rgb(247, 142, 37);
+  border-radius: 3px;
+  padding: 0.3rem 1rem;
+  margin-right: 0.8rem;
+}
+
+#poster {
+  width: 100%;
+}
+
+#title {
+  font-size: 2.5rem;
+}
+
+.plot {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.actors {
+  font-size: 1.3rem;
+  color: aqua;
+}

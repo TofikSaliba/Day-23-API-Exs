@@ -18,6 +18,10 @@ body {
   background: wheat;
 }
 
+#header {
+  font-size: 5rem;
+}
+
 #input,
 #search {
   border-radius: 5px;
